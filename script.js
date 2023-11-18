@@ -28,11 +28,11 @@ if (isMobile) {
     });
     const navSocialLinks = document.querySelectorAll('.social-links');
 
-    navSocialLinks.forEach(function(navSocialLinksnks) {
-        navSocialLinks.addEventListener('click', function() {
+    navSocialLinks.forEach(function(navSocialLink) {
+        navSocialLink.addEventListener('click', function() {
             navMenu.style.display = 'none';
             navClose.style.display = 'none';
             navToggle.style.display = 'block';
         });
-    });
+    });    
 }
