@@ -12,3 +12,10 @@ navClose.addEventListener('click', function() {
     navToogle.style.display = "block";
     navClose.style.display = "none"
 })
+
+const navLink = document.querySelectorAll('.nav-item')
+ navLink.addEventListener('çlick', function(){
+    navMenu.style.display = "none"
+    navClose.style.display = "none"
+    navToogle.style.display = "block"
+ })
