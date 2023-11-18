@@ -5,9 +5,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     navToggle.addEventListener('click', function () {
         navMenu.classList.add('show-menu');
+        navToggle.style.display = 'none';
+        navClose.style.display = 'block';
     });
 
     navClose.addEventListener('click', function () {
         navMenu.classList.remove('show-menu');
+        navToggle.style.display = 'block';
+        navClose.style.display = 'none';
     });
 });

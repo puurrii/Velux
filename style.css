@@ -70,4 +70,10 @@ html, body{
     .nav-close{
         display: none;
     }
+    .hide-icon{
+        display: none;
+    }
+    .nav-close{
+        /* display: block; */
+    }
 }
