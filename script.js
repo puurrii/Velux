@@ -26,4 +26,13 @@ if (isMobile) {
             navToggle.style.display = 'block';
         });
     });
+    const navSocialLinks = document.querySelectorAll('.social-links');
+
+    navSocialLinks.forEach(function(navSocialLinksnks) {
+        navSocialLinks.addEventListener('click', function() {
+            navMenu.style.display = 'none';
+            navClose.style.display = 'none';
+            navToggle.style.display = 'block';
+        });
+    });
 }
