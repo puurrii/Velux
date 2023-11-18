@@ -1,15 +1,17 @@
-const navMenu = document.getElementById('nav-menu');
-const navToogle = document.getElementById('nav-toogle');
-const navClose = document.getElementById('nav-close');
+document.addEventListener('DOMContentLoaded', function () {
+    const navToggle = document.querySelector('.nav-toogle');
+    const navClose = document.querySelector('.nav-close');
+    const navMenu = document.querySelector('.nav-menu');
 
-if (navToogle) {
-    navToogle.addEventListener('click', () => {
+    navToggle.addEventListener('click', function () {
         navMenu.classList.add('show-menu');
+        navToggle.classList.add('hide-icon');
+        navClose.classList.remove('hide-icon');
     });
-}
 
-if (navClose) {
-    navClose.addEventListener('click', () => {
+    navClose.addEventListener('click', function () {
         navMenu.classList.remove('show-menu');
+        navToggle.classList.remove('hide-icon');
+        navClose.classList.add('hide-icon');
     });
-}
+});
