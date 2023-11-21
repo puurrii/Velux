@@ -52,53 +52,7 @@ ul{
 .nav-close, .nav-toogle{
     display: none;
     height: 20px;
-}
-@media screen and (max-width:600px) and (min-width:320px) {
-    header{
-        padding-left: 3%;
-        padding-top: 7%;
-        display: flex;
-        justify-content: center;
-    }
-    .navbar{
-        height: 7vh;
-    }
-    .nav-menus{
-        flex-direction: column;
-        display: none;
-        padding-top: 10%;
-        left: 35%;
-        position: absolute;
-        text-align: center;
-    }
-    .nav-item{
-        margin: 15px;
-        font-size: 20px;
-    }
-    .nav-toogle{
-        height:25px;
-        top: 5.4%;
-        left: 76%;
-        display: block;
-        transform: rotate(180deg);
-        position: absolute;
-    }
-    .nav-close{
-        top: 5.4%;
-        left: 77%;
-        display: none;
-        position: absolute;
-    }
-    .nav-menus{
-        padding-right: 2px;
-    }
-    
-    .nav-title{
-        font-size: 22px;
-        padding-left: 0;
-    }
-}
-main{
+}main{
     display: flex;
     padding-top: 10%;
     margin: 0 auto;
@@ -183,4 +137,50 @@ main{
     outline: none;
     background: transparent;
     text-transform: uppercase;
+}
+
+@media screen and (max-width:600px) and (min-width:320px) {
+    header{
+        padding-left: 3%;
+        padding-top: 7%;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar{
+        height: 7vh;
+    }
+    .nav-menus{
+        flex-direction: column;
+        display: none;
+        padding-top: 10%;
+        left: 35%;
+        position: absolute;
+        text-align: center;
+    }
+    .nav-item{
+        margin: 15px;
+        font-size: 20px;
+    }
+    .nav-toogle{
+        height:25px;
+        top: 5.4%;
+        left: 76%;
+        display: block;
+        transform: rotate(180deg);
+        position: absolute;
+    }
+    .nav-close{
+        top: 5.4%;
+        left: 77%;
+        display: none;
+        position: absolute;
+    }
+    .nav-menus{
+        padding-right: 2px;
+    }
+    
+    .nav-title{
+        font-size: 22px;
+        padding-left: 0;
+    }
 }
