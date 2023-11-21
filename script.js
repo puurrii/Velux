@@ -20,3 +20,26 @@ if(isMobile){
     navtoggle.style.display = 'block'
    })
 }
+const img1 = document.querySelector('.watchimg1')
+const img2 = document.querySelector('.watchimg2')
+const img3 = document.querySelector('.watchimg3')
+const first = document.querySelector('.clk1')
+const second = document.querySelector('.clk2')
+const third = document.querySelector('.clk3')
+
+first.addEventListener('click', () => {
+    img1.style.display = 'block'
+    img2.style.display = 'none'
+    img3.style.display = 'none'
+})
+second.addEventListener('click', () => {
+    img1.style.display = 'none'
+    img2.style.display = 'block'
+    img3.style.display = 'none'
+})
+
+third.addEventListener('click', () => {
+    img1.style.display = 'none'
+    img2.style.display = 'none'
+    img3.style.display = 'block'
+})

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
 *{
     padding: 0;
     margin: 0;
@@ -6,18 +7,18 @@
 }
 html, body{
     width: 100%;
-    color: #fff;
-    background-color: #a1ccc7;
-    font-family: 'Open Sans', sans-serif;
+    color: hsl(0, 0%, 100%);
+    background-color: #0a0a0a;
+    font-family: "Montserrat", sans-serif;;
 }
 header{
-    padding-top: 3%;
+    padding-top: 2%;
     display: flex;
     justify-content: center;
 }
 a{
     text-decoration: none;
-    color: #fff;
+    color: hsl(0, 0%, 90%);
 }
 ul{
     list-style: none;
@@ -31,7 +32,7 @@ ul{
     width: 80%;
     border: 1px solid #212121;
     border-radius: 50px;
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, .1);
     filter: blur(1);
 }
 .nav-menus{
@@ -52,7 +53,7 @@ ul{
     display: none;
     height: 20px;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:600px) and (min-width:320px) {
     header{
         padding-left: 3%;
         padding-top: 7%;
@@ -76,15 +77,15 @@ ul{
     }
     .nav-toogle{
         height:25px;
-        top: 5.2%;
-        left: 78%;
+        top: 5.4%;
+        left: 76%;
         display: block;
-        rotate: 180deg;
+        transform: rotate(180deg);
         position: absolute;
     }
     .nav-close{
         top: 5.4%;
-        left: 79%;
+        left: 77%;
         display: none;
         position: absolute;
     }
@@ -96,4 +97,90 @@ ul{
         font-size: 22px;
         padding-left: 0;
     }
+}
+main{
+    display: flex;
+    padding-top: 10%;
+    margin: 0 auto;
+    width: 90%;
+}
+.watchimg1, .watchimg2, .watchimg3{
+    height: 430px;
+
+}
+.watchimg2, .watchimg3{
+    display: none;
+}
+.watchlogo{
+    height: 100px;
+}
+.product-info, .product-image, .product-description{
+    width: 33%;
+}
+.hero{
+    padding: 10px 0;
+}
+.info{
+    font-size: 39px;
+    font-weight: 700;
+}
+.hero>p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.hero>button{
+    height: 7vh;
+    width: 13vw;
+    margin-top: 25%;
+    margin-left: 15%;
+    background: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    color: hsl(0, 0%, 60%);
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.hero>button:active{
+    box-shadow: 0 0 4px 4px #fff; 
+    scale: 0.9;
+}
+.pimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center ;
+}
+.slider>*{
+    margin: 5px;
+    border: none
+}
+.watchlogo{
+    margin-top: 20%;
+    margin-left: 4%;
+}
+.product-description{
+    padding-left: 6%;
+}
+.product-description>p{
+    width: 80%;
+    color: hsl(0, 0%, 60%);
+    margin-top: 1%;
+}
+.product-description>button{
+    width: 20vw;
+    height: 6vh;
+    margin: 15% 1%;
+    letter-spacing: 2px;
+    border: none;
+    font-size: 20px;
+    color: hsl(0, 0%, 90%);
+    outline: none;
+    background: transparent;
+    text-transform: uppercase;
 }
