@@ -1,100 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: hsl(0, 0%, 60%);
 }
 html, body{
     width: 100%;
-    background: black;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #a1ccc7;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
 }
 a{
     text-decoration: none;
-}
-.helo{
-    display: flex;
+    color: #fff;
 }
 ul{
+    list-style: none;
+}
+.navbar{
+    position:fixed;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10.5vh;
+    width: 80%;
+    border: 1px solid #212121;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, .2);
+    filter: blur(1);
 }
-li{
-list-style: none;
+.nav-menus{
+    display: flex;
+    padding-right: 30px;
 }
-a:hover, i:hover{
-color: hsl(0, 0%, 100%);
+.nav-title, .nav-item{
+    margin: 0 30px;
+    padding-bottom: 5px;
+    font-size: 24px;
 }
-.nav-logo{
-    display: inline-block;
+.nav-title{
+    padding-left: 55px;
+    font-size: 33px;
+    font-weight: 700;
 }
 .nav-close, .nav-toogle{
     display: none;
-}
-.navbar{
-    width: 100%;
-    height: 9vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.nav-menu{
-    display: flex;
-    justify-content: space-around;
-}
-.nav-menu{
-text-align: center;
-}
-.nav-logo{
-    font-size: 35px;
-    font-weight: 700;
-}
-.social-links i{
-    font-size: 20px;
-    margin: 20px;
-    align-items: center;
-}
-.social-menu{
-    display: flex;
-    padding-left: 70px;
-    align-items: center;
-}
-.nav-menu .nav-item{
-    font-size: 23px;
-    margin: 23px;
-    font-weight: 600;
-}
-header{
-    border-bottom: 1px solid hsl(0, 0%, 60%);
-}
-.social-links{
-    margin-top: 10px;
+    height: 20px;
 }
 @media screen and (max-width:600px) {
-    .nav-menu{
-        display: none;
-        position: absolute;
-        top: 10%;
-        left: 25%;
+    header{
+        padding-left: 3%;
+        padding-top: 7%;
+        display: flex;
+        justify-content: center;
     }
     .navbar{
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 28px;
+        height: 7vh;
     }
-    .nav-toogle, .nav-close{
-        display: block;
+    .nav-menus{
+        flex-direction: column;
+        display: none;
+        padding-top: 10%;
+        left: 35%;
         position: absolute;
-        right: 0;
-        padding-right: 28px;
-        font-size: 25px;
+        text-align: center;
+    }
+    .nav-item{
+        margin: 15px;
+        font-size: 20px;
+    }
+    .nav-toogle{
+        height:25px;
+        top: 5.2%;
+        left: 78%;
+        display: block;
+        rotate: 180deg;
+        position: absolute;
     }
     .nav-close{
+        top: 5.4%;
+        left: 79%;
         display: none;
+        position: absolute;
     }
-    ul {
-        flex-direction: column;
+    .nav-menus{
+        padding-right: 2px;
     }
-    .social-menu{
-        padding: 0;
+    
+    .nav-title{
+        font-size: 22px;
+        padding-left: 0;
     }
 }
