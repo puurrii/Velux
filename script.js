@@ -19,27 +19,30 @@ if(isMobile){
     navmenu.style.display = 'none'
     navtoggle.style.display = 'block'
    })
-}
-const img1 = document.querySelector('.watchimg1')
-const img2 = document.querySelector('.watchimg2')
-const img3 = document.querySelector('.watchimg3')
-const first = document.querySelector('.clk1')
-const second = document.querySelector('.clk2')
-const third = document.querySelector('.clk3')
-
-first.addEventListener('click', () => {
-    img1.style.display = 'block'
-    img2.style.display = 'none'
-    img3.style.display = 'none'
-})
-second.addEventListener('click', () => {
-    img1.style.display = 'none'
-    img2.style.display = 'block'
-    img3.style.display = 'none'
-})
-
-third.addEventListener('click', () => {
-    img1.style.display = 'none'
-    img2.style.display = 'none'
-    img3.style.display = 'block'
-})
+    }
+    //need to study
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get references to the images and container
+      const images = document.querySelectorAll(".pimg img");
+      const imageContainer = document.getElementById("imageSlider");
+  
+      // Set initial image index and total number of images
+      let currentIndex = 0;
+      const totalImages = images.length;
+  
+      // Function to show the next image
+      function showNextImage() {
+          images[currentIndex].style.display = "none";
+          currentIndex = (currentIndex + 1) % totalImages;
+          images[currentIndex].style.display = "block";
+      }
+  
+      // Function to start the image slider
+      function startImageSlider() {
+          setInterval(showNextImage, 5000); // Change the duration as needed (in milliseconds)
+      }
+  
+      // Start the image slider when the DOM is loaded
+      startImageSlider();
+  });
+  
