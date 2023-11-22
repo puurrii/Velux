@@ -59,7 +59,7 @@ ul{
     width: 90%;
 }
 .watchimg1, .watchimg2, .watchimg3{
-    height: 430px;
+    height: 66vh;
 
 }
 .watchimg2, .watchimg3{
@@ -115,8 +115,8 @@ ul{
     border: none
 }
 .watchlogo{
-    margin-top: 20%;
-    margin-left: 4%;
+    margin-top: 17%;
+    margin-left: 18%;
 }
 .product-description{
     padding-left: 6%;
@@ -130,7 +130,8 @@ ul{
     width: 20vw;
     height: 6vh;
     margin: 15% 1%;
-    letter-spacing: 2px;
+    cursor: pointer;
+    letter-spacing: 6px;
     border: none;
     font-size: 20px;
     color: hsl(0, 0%, 90%);
@@ -182,5 +183,87 @@ ul{
     .nav-title{
         font-size: 22px;
         padding-left: 0;
+    }
+    main{
+        flex-direction: column;
+    }
+    .info{
+        font-size: 25px;
+        width: 100vw;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 30%;
+    }
+    .hero>p{
+        font-size: 20px;
+        width: 100vw;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .hero>button{
+        height: 7vh;
+        width: 55vw;
+        margin-top: 30%;
+        margin-left: 15%;
+        background: transparent;
+        border: 1px solid #fff;
+        cursor: pointer;
+        transition: all .1s ease-in-out;
+        color: hsl(0, 0%, 60%);
+        font-size: 20px;
+        position: absolute;
+        bottom: 6%;
+        left:13%;
+        text-transform: capitalize;
+    }
+    .hero>button:active{
+        scale: 0.9;
+    }
+    .watchimg1, .watchimg2, .watchimg3{
+        height: 43vh;
+        position: absolute;
+        bottom: 20%;
+        left: 33%;
+    }
+    .pimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .slider{
+        margin-top: 10px;
+        display: flex;
+        text-align: center;
+        justify-content: center ;
+    }
+    .slider>*{
+        margin: 5px;
+        border: none
+    }
+    .watchlogo{
+        margin-top: 17%;
+        margin-left: 18%;
+    }
+    .product-description{
+        display: none;
+        /* padding-left: 6%; */
+    }
+    .product-description>p{
+        width: 80%;
+        color: hsl(0, 0%, 60%);
+        margin-top: 1%;
+    }
+    .product-description>button{
+        width: 20vw;
+        height: 6vh;
+        margin: 15% 1%;
+        cursor: pointer;
+        letter-spacing: 6px;
+        border: none;
+        font-size: 20px;
+        color: hsl(0, 0%, 90%);
+        outline: none;
+        background: transparent;
+        text-transform: uppercase;
     }
 }
