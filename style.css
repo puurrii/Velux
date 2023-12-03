@@ -223,10 +223,11 @@ ul{
         scale: 0.9;
     }
     .watchimg1, .watchimg2, .watchimg3{
-        height: 43vh;
+        height: 45vh;
         position: absolute;
-        bottom: 20%;
-        left: 33%;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .pimg{
         display: flex;
@@ -248,7 +249,7 @@ ul{
         margin-left: 18%;
     }
     .product-description{
-        display: none;
+        display: none;/
         /* padding-left: 6%; */
     }
     .product-description>p{
